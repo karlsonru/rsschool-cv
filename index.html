@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>CV Polovnikov Ivan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <main class="main">
+        <aside class="left-side">
+          <div id="my-photo">
+            <img src="./my-photo.jpg" alt="my foto">
+          </div>
+          <section>
+            <h3>Welcome here! My name is Ivan</h3>
+            <ul>
+              <h4>Contacts:</h4>
+              <li><b>Email: </b>freelancer4.84@gmail.com</li>
+              <li><b>Discord: </b>karlsonru</li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <h4>Education & courses:</h4>
+              <li><b>2021</b> - JavaScript basic course at <a href="https://learn.javascript.ru">learn.javascript.ru</a></li>
+              <li><b>2018</b> - International Relations (master), St.Petersburg State University</li>
+            </ul>
+          </secton>
+
+          <section>
+            <ul>
+              <h4>Languages:</h4>
+              <li>Russian (native)</li>
+              <li>English (Upper Intermediate)</li>
+              <li>Italian (B2)</li>
+            </ul>
+          </section>
+        </aside>
+
+        <article class="right-side">
+          <section>
+            <h3>There's something about my hard skills & experience and how I might be useful for you</h3>
+          </section>
+          <section>
+            <ul>
+              <h4>Career:</h4>
+              <li>Technical support engeneer</li>
+            </ul>
+            <ul>
+              <h4>At basic level can deal with:</h4> 
+              <li>Python</li>
+              <li>Java Script <i>(native)</i></li>
+              <li>Git</li>
+              <li>Linux console</li>
+              <li>Asterisk</li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <h4>Soft skills:</h4>
+              <li>Able to grasp new concepts quickly</li>
+              <li>Highly organized</li> 
+              <li>Technology-focused</li>
+              <li>Initiative</li>
+            </ul>
+          </section>
+        </article>
+      </main>
+      <details>
+        <summary>Code example:</summary>
+          <a href="https://www.codewars.com/kata/5526fc09a1bbd946250002dc">Find The Parity Outlier from codewars.com</a>
+          <pre><code>
+            function findOutlier(integers){
+              let evenCounter = 0; 
+              let oddCounter = 0;  
+              
+              for (let num of integers.slice(0,3)) {
+                (num % 2 == 0) ? evenCounter++ : oddCounter++;
+              }
+
+              let rest = evenCounter > 1 ? 1 : 0;
+              
+              for (let num of integers) {
+                if (Math.abs(num % 2) == rest) return num; 
+              }
+            }
+          </code></pre>
+      </details>
+      <footer class="footer">
+        <a id="github"" href="https://github.com/karlsonru">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="GitHub image logo">
+        </a>
+        <a id="rs_school" href="https://app.rs.school/">
+          <img src="https://app.rs.school/static/images/logo-rsschool3.png" alt="RS school image logo">
+        </a>
+        <h2 id="year">2021</h2>
+      </footer>
+    </div>
+  </body>
+</html>
